@@ -10,7 +10,7 @@
 
 
 :root{
-    --primary:#579BB1;
+    --primary:#def134;
     --secondary:#28e29e;
     --black:#333;
     --white:#fff;
@@ -32,11 +32,11 @@ header{
 }
 
 header .sectionName{
-    color: var(--white);
+    color: var(--secondary);
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1px;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 
 header ul{
@@ -55,10 +55,16 @@ header ul li{
     padding: 10px 20px;
     border: 1px solid ;
 }
-
+header ul li:hover{
+    background-color: rgb(243, 236, 236);
+    
+}
 header ul li a{
     color: var(--black);
     font-size: 1rem;
+}
+header ul li a:hover{
+    color: var(--secondary);
 }
 
 section > div{

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+:root{
+    --primary:#579BB1;
+    --secondary:#28e29e;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(108, 0, 0, 0.1);
+}
+
+body{
+    background: var(--primary);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+header .sectionName{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: var(--box-shadow);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 0vw;
+    border: 1px solid;
+    
+}
+
+header ul li{
+    background-color: #ffff;
+    font-size: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 1px solid ;
+}
+
+header ul li a{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+section > div{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    font-size: 18px;
+    padding: 1vw;
+}
+
+section > :first-child > div{
+    margin-top: 12vh;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 34px;
+}
+
+
+form div input ,select{
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+.buttons{
+    flex-direction: row;
+    font-size: 18px !important;
+    gap: 5px;
+    
+}
+
+.buttons button{
+    padding: 20px 30px;
+    border: 1px solid var(--black);
+    cursor: pointer;
+    background: var(--secondary);
+    border-radius: 25px;
+}
+
+
+
+#CustomerManage table , #ItemManage table{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#CustomerManage th , #CustomerManage td , #ItemManage th , #ItemManage td{
+    border: 1px solid var(--white);
+    width: 20vw;
+    height: 4vw;
+    text-align: center;
+}
+
+#CustomerManage th , #ItemManage th{
+    background-color: var(--secondary);
+    color: white;
+}
+
+section{
+    display: none;
+}
+
+.includeDetails{
+    border: 1px solid var(--white);
+    padding: 20px;
+}
+
+#OrderManage > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#OrderManage > :first-child > div{
+    margin-top: 12vh;
+    border-radius: 25px;
+    border: 1px solid var(--white);
+
+}
+
+#OrderManage h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: var(--secondary);
+    padding: 10px 20px;
+    border-radius: 25px;
+    
+}
+
+#OrderManage .includeDetails form div > div ,#OrderManage .includeDetails form > :last-child{
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .includeDetails form > :first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#OrderManage .ItemSelect form > :first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#OrderManage .ItemSelect form div > div , #OrderManage .ItemSelect form > :last-child{
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .ItemSelect form > :nth-child(2){
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+}
+
+.ItemSelect > :last-child{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ItemSelect button{
+    padding: 10px 20px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: white;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.ItemSelect button i{
+    font-size: 25px;
+    padding: 0 10px;
+}
+.ItemSelect{
+    border: 1px solid var(--black);
+    padding: 20px;
+}
+
+#OrderManage .TotalCal h1{
+    background-color: transparent;
+    padding: 0;
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.TotalCal {
+    border: 1px solid var(--black);
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+   
+}
+
+.TotalCal h2{
+    color: var(--white);
+}
+
+.TotalCal form > :first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.TotalCal > :last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.TotalCal button{
+    padding: 10px 20px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.TotalCal button i{
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.tableRow{
+   height: auto;
+}
+
+.table > div , .tableRows > div{
+    display: flex;
+}
+
+.table , .tableRows{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5.7vw;
+}
+
+.table > div > div , .tableRows > div > div{
+    width: 18vw;
+    height: 4vw;
+    border: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.tableRows > div > div{
+    width: 20vw;
+}
+
+#OrderManage > :last-child{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 34vh;
+}
+
+h5{
+    font-size: 18px;
+    color: #ff4343;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 7.8vh;
+    padding: 15px 0 0 0;
+}
+
+
